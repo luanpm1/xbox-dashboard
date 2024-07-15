@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Real estate exchange</title>
+    <link rel="icon" href="images.jpg">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Nhúng thư viện bootstrap 4-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <!-- Import Toolstip truoc datatable -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <!-- Import Datatable sau jquery -->
+    <!-- Import them style bootstrap cho datatable -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body onload="onPageLoading()">
+    <!-- Header -->
+    <header>
+        <div class="container-sm header bg-dark text-light">
+            <h1>XBOX</h1>
+            <div class="container animation mt-4">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Xbox_one_logo.svg/1200px-Xbox_one_logo.svg.png"
+                    alt="icon-xbox">
+            </div>
+
+            <div class="container mt-5 clearfix p-2 m-2 mx-auto">
+                <nav class="navbar navbar-expand-sm navbar-dark float-sm-left">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Game Pass</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Sản phẩm</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Máy Xbox</a>
+                                <a class="dropdown-item" href="#">Phụ kiện</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hỗ trợ</a>
+
+                        </li>
+                    </ul>
+                </nav>
+                <form class="form-group w-50 mx-auto">
+                    <input class="form-control" type="text" placeholder="Tìm kiếm...">
+
+                </form>
+                <nav class="navbar navbar-expand-sm navbar-dark float-sm-right">
+                    <ul class="navbar-nav">
+                        <a href="#"><i class="fa-solid fa-cart-shopping fa-xl mr-3 mt-4 text-success icons"></i></a>
+                        <a href="#"><i class="fa-solid fa-gamepad fa-xl mr-3 mt-4 text-success icons"></i></a>
+                        <a href="#"><i class="fa-solid fa-snowflake fa-xl mr-3 mt-4 text-success icons"></i></a>
+                        <a class="navbar-brand" href="#user_lulu">
+                            <img src="images/icon_user_lulu.jpg" alt="Logo" style="width: 40px;" class="rounded-circle">
+                        </a>
+                        <li class="nav-item">
+                            <a class="nav-link text-light text-uppercase font-weight-bold" href="#">Kidbuu</a>
+                        </li>
+
+
+
+
+
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+
+        <div class="container mt-4 text-center">
+            <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod
+                placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non
+                congue
+                ullam corper. Praesent tincidunt sed
+                tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non
+                fringilla.</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <hr style="width: 80%; background-color: chocolate;">
+    </div>
+
+    <section>
+        <!-- Main images -->
+        <div id="demo" class="container-sm carousel slide mt-5" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img width="1200px" height="600px" style="object-fit: cover;"
+                        src="https://images.pexels.com/photos/1365795/pexels-photo-1365795.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Xbox One">
+                    <div class="carousel-caption">
+                        <h3>Xbox One</h3>
+                        <p>You need it!</p>
+                    </div>
+                </div>
+                <div class="carousel-item mw-100">
+                    <img width="1200px" height="600px" style="object-fit: cover;"
+                        src="https://images.pexels.com/photos/16311110/pexels-photo-16311110/free-photo-of-game-controller-on-black-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Xbox One">
+                    <div class="carousel-caption">
+                        <h3>Xbox One</h3>
+                        <p>You need it!</p>
+                    </div>
+                </div>
+                <div class="carousel-item mw-100">
+                    <img width="1200px" height="600px" style="object-fit: cover;"
+                        src="https://images.pexels.com/photos/14541069/pexels-photo-14541069.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Xbox One">
+                    <div class="carousel-caption">
+                        <h3>Xbox One</h3>
+                        <p>You need it!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+        <div class="container mt-4 text-center">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime saepe voluptate nostrum corrupti officia
+                illum alias tenetur quas, fugiat odio sed debitis enim perferendis explicabo earum totam ipsa amet
+                dicta?
+            </p>
+        </div>
+
+        <div class="container">
+            <hr style="width: 80%; background-color: chocolate;">
+        </div>
+        <!-- Main -->
+        <div class="container-sm mt-5">
+            <div class="row">
+                <div class="col-sm-2 bg-dark rounded">
+                    <nav class="navbar navbar-dark">
+
+                        <ul class="navbar-nav mx-auto">
+                            <h5 class="text-center text-light border p-2 rounded-circle bg-success">Admin</h5>
+                            
+                            <li class="nav-item">
+                                <strong><a class="nav-link" href="customer.html"> <i
+                                            class="fa-solid fa-circle-user fa-lg text-success"></i>&nbsp
+                                        Customer</a></strong>
+                            </li>
+
+                            <li class="nav-item">
+                                <strong><a class="nav-link" href="employee.html"> <i class="fa-solid fa-building-user fa-lg text-success"></i> &nbsp
+                                        Employee</a></strong>
+                            </li>
+                            <li class="nav-item">
+                                <strong><a class="nav-link" href="addressmap.html"> <i class="fa-solid fa-map fa-lg text-success"></i>
+                                        &nbsp Address Map</a></strong>
+                            </li>
+                            <li class="nav-item">
+                                <strong><a class="nav-link" href="constructiioncontractor.html"><i class="fa-solid fa-city fa-lg text-success"></i> &nbsp Construction Contractor</a></strong>
+                            </li>
+                            <li class="nav-item">
+                                <strong><a class="nav-link" href="designunit.html"> <i class="fa-solid fa-cube fa-lg text-success"></i> Design Unit</a></strong>
+                            </li>
+                            <li class="nav-item">
+                                <strong><a class="nav-link active" href="district.html"> <i class="fa-solid fa-road fa-lg text-success"></i> &nbsp District</a></strong>
+                            </li>
+                            <li class="nav-item">
+                                <strong><a class="nav-link" href="investor.html"> <i class="fa-solid fa-truck-moving fa-lg text-success"></i> &nbsp Investors</a></strong>
+                            </li>
+                            <li class="nav-item">
+                                <strong><a class="nav-link" href="location.html"> <i class="fa-solid fa-location-dot fa-lg text-success"></i> &nbsp Location</a></strong>
+                            </li>
+                            <li class="nav-item">
+                                <strong><a class="nav-link" href="masterlayout.html"> <i class="fa-solid fa-meteor fa-lg text-success"></i> &nbsp Master Layout</a></strong>
+                            </li>
+                            <li class="nav-item">
+                                <strong><a class="nav-link" href="project.html"> <i class="fa-brands fa-r-project fa-lg text-success"></i> &nbsp Project</a></strong>
+                            </li>
+                            <li class="nav-item">
+                                <strong><a class="nav-link" href="province.html"> <i class="fa-solid fa-frog fa-lg text-success"></i> &nbsp Province</a></strong>
+                            </li>
+                            <li class="nav-item">
+                                <strong><a class="nav-link" href="realestate.html"> <i class="fa-solid fa-sign-hanging fa-lg text-success"></i> &nbsp Realestate</a></strong>
+                            </li>
+                            <li class="nav-item">
+                                <strong><a class="nav-link" href="regionlink.html"> <i class="fa-regular fa-face-rolling-eyes fa-lg text-success"></i> &nbsp Region Link</a></strong>
+                            </li>
+                            <li class="nav-item">
+                                <strong><a class="nav-link" href="street.html"> <i class="fa-solid fa-street-view fa-lg text-success"></i> &nbsp Street</a></strong>
+                            </li>
+                            <li class="nav-item">
+                                <strong><a class="nav-link" href="subscription.html"> <i class="fa-solid fa-closed-captioning fa-lg text-success"></i> &nbsp Subscription</a></strong>
+                            </li>
+                            <li class="nav-item">
+                                <strong><a class="nav-link" href="utiliti.html"> <i class="fa-brands fa-nutritionix fa-lg text-success"></i> &nbsp Utilities</a></strong>
+                            </li>
+                            <li class="nav-item">
+                                <strong><a class="nav-link" href="ward.html"> <i class="fa-solid fa-warehouse fa-lg text-success"></i> &nbsp Ward</a></strong>
+                            </li>
+
+
+
+
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-sm-10">
+                    <h3 class="text-center">District</h3>
+
+                    <button class="btn btn-outline-success my-2" data-toggle="tooltip" data-placement="bottom"
+                        title="Item Add" id="btn-add"><span class="fa-solid fa-football fa-lg"></span>&nbsp
+                        Add New
+                    </button>
+
+                    <table class="table table-bordered table-striped table-hover table-sm table-responsive-sm">
+                        <thead class="thead-dark">
+                            <tr>
+
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container-sm d-flex justify-content-between">
+            <div>
+                <strong>Copyright &copy; 2024 <a href="https://gitlab.com/">Real estate exchange</a>.</strong> All
+                rights
+                reserved.
+            </div>
+            <div class="mx-auto">
+                <a href="mailto:luampm@devcamp.edu.vn"><i class="fa-solid fa-envelope fa-xl text-secondary"></i></a>
+                <a href="https://github.com/"><i class="fa-brands fa-github fa-xl text-secondary"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100015722329237&locale=vi_VN"><i
+                        class="fa-brands fa-facebook fa-xl text-secondary"></i></a>
+                <a href="https://www.youtube.com/channel/UCoLtAu4rFMdEODbD38Pa5TA"><i
+                        class="fa-brands fa-youtube fa-xl text-secondary"></i></a>
+            </div>
+            <div>
+                <b>Version</b> 3.2.0
+            </div>
+        </div>
+
+
+
+    </footer>
+
+    <!--  MODAL CREATE & EDIT PET -->
+    <div class="modal modal-create-edit" tabindex="-1" id="modal-create-edit">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h2 class="modal-title text-dark mr-3" style="margin:auto"><b>CUSTOMER DETAIL</b>
+                    </h2>
+                    <button type="button" class="close text-white btn-close" data-dismiss="modal" aria-label="Close">
+                        <span class="text-white" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-wrap">
+                        <div class="row mb-2 row-pet">
+                            <div class="col-8">
+                                <div class="form-group mb-2">
+                                    <label for="input-create-edit-name">Name<span class="text-danger">
+                                            *</span></label>
+                                    <input type="text" class="form-control" id="input-create-edit-name"
+                                        placeholder="Enter name">
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                                <div class="form-group mb-2">
+                                    <label for="input-create-edit-address">Address<span class="text-danger">
+                                            *</span></label>
+                                    <input type="text" class="form-control" id="input-create-edit-address"
+                                        placeholder="Enter address">
+                                    <div class="invalid-feedback" id="invalid-feedback-address"></div>
+                                </div>
+                                <div class="form-group mb-2">
+                                    <label for="input-create-edit-email">Email<span class="text-danger">
+                                            *</span></label>
+                                    <input type="text" class="form-control" id="input-create-edit-email"
+                                        placeholder="Enter email">
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-4 form-group">
+                                <div id="price-wrap">
+                                    <label for="input-create-edit-mobile">Mobile<span class="text-danger">
+                                            *</span></label>
+                                    <input type="number" class="form-control" id="input-create-edit-mobile">
+                                    <div class="invalid-feedback"></div>
+                                </div>
+
+                            </div>
+                            <div class="col-4 form-group">
+                                <label for="input-create-edit-createDate">
+                                    Create date</label>
+                                <input type="date " class="form-control" id="input-create-edit-createDate">
+                                <div class="invalid-feedback" id="createDate-invalid-feedback"></div>
+                            </div>
+
+                            <div class="col-4 form-group">
+                                <label for="input-create-edit-updateDate">Update date</label>
+                                <input type="date" class="form-control" id="input-create-edit-updateDate">
+                                <div class="invalid-feedback "></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="textarea-create-edit-description">Description<span class="text-danger">
+                                    *</span></label>
+                            <textarea id="textarea-create-edit-description" class="form-control" name="description"
+                                rows="4" placeholder="description"></textarea>
+                            <div class="invalid-feedback " id="description-invalid-feedback"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class=" modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button id="btn-create" type="button" class="btn btn-success">Create</button>
+                    <button id="btn-update" type="button" class="btn btn-primary">Update</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- CONFIRM DELETE PET  -->
+    <div class="modal modal-delete" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content bg-danger">
+                <div class="modal-header modal-header-css d-flex justify-content-center">
+                    <h5 class="modal-title">
+                        <i class="fa-regular fa-circle-xmark circle-mark-css text-light"></i>
+                    </h5>
+                </div>
+                <div class="modal-body modal-body-css text-center">
+                    <p>Are you sure you want to delete this customer?</p>
+                </div>
+                <div class="modal-footer modal-footer-css d-flex justify-content-center">
+                    <button id="btn-delete-cancel" type="button" class="btn btn-secondary text-light btn-outline-light"
+                        data-dismiss="modal">Cancel</button>
+                    <button id="btn-confirm" type="button" class="btn text-light btn-outline-light">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+<script src="district.js"></script>
+
+
+
+
+</html>
